@@ -12,6 +12,10 @@ mkcd () {
     cd "$1"
 }
 
+gg () {
+	wget 'https://raw.githubusercontent.com/github/gitignore/main/'$1'.gitignore'
+}
+
 trim () {
     if [ "$trim_prompt" = true ]
     then
