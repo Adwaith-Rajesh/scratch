@@ -13,7 +13,7 @@ mkcd () {
 }
 
 gg () {
-	wget 'https://raw.githubusercontent.com/github/gitignore/main/'$1'.gitignore'
+	wget 'https://raw.githubusercontent.com/github/gitignore/main/'$1'.gitignore' -O .gitignore
 }
 
 trim () {
