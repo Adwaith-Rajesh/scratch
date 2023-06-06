@@ -13,7 +13,7 @@ mkcd () {
 }
 
 gg () {
-	wget 'https://raw.githubusercontent.com/github/gitignore/main/'$1'.gitignore' -O .gitignore
+	wget 'https://gitlab.com/adwaithrajesh/gitignore/-/raw/main/'$1'.gitignore' -O .gitignore
 }
 
 trim () {
@@ -72,5 +72,9 @@ eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 # luarocks bin folder
 export PATH=$PATH:/home/adwaith/.luarocks/bin
 export PATH=$PATH:/usr/share/texlive/texmf-dist/tex/xelatex
+export PATH=$PATH:/home/adwaith/.local/bin/nelua/bin
+
+# nim bin folder
+export PATH=$PATH:/home/adwaith/.nimble/bin
 
 bind 'set bell-style none'
